@@ -7,7 +7,7 @@ struct tuple {
     ipv4_t saddr, daddr;
     port_t sport, dport;
     uint8_t protocol;
-} __attribute__((packed));
+};
 
 typedef uint32_t tuple_hash_t;
 

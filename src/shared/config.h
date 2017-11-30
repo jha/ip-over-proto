@@ -23,4 +23,8 @@
  * protocol, which we prefer to use if possible */
 #define CONFIG_ENABLE_UDP
 
+/* Change undef to define to enable hardware-accelerated CRC hashing on
+ * the server. You also need to add -msse4.2 to LFLAGS in the Makefile */
+#undef CONFIG_ENABLE_HWCRC
+
 #endif
