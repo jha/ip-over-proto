@@ -5,7 +5,7 @@ This project allows you to tunnel IPv4 traffic over 4 different transports (in o
 1. DNS
 2. ICMP
 3. TCP
-4. ICMP
+4. UDP
 
 ## Building
 
