@@ -9,7 +9,7 @@ This project allows you to tunnel IPv4 traffic over 4 different transports (in o
 
 ## Building
 
-The first step is to build the binaries. They client and server binaries will live at `./bin/iop-client` and `./bin/iop-server` respectively.
+The first step is to build the binaries. The client and server binaries will live at `./bin/iop-client` and `./bin/iop-server` respectively.
 
 ```bash
 # Use this to build both client and server
@@ -22,13 +22,13 @@ make client
 make server
 ```
 
-You have the choice of manually installing the binary, or automatically installing.
+You have the choice of manually installing the binary or automatically installing.
 
 ```bash
 make install
 ```
 
-Automatic installation will place one or both projects, depending on if you built both, into your bin folder, with the names `iop-client` and `iop-server`.
+Automatic installation will place the project(s) in the bin folder, with the names `iop-client` and `iop-server` respectively.
 
 ## Starting the client
 
@@ -55,7 +55,7 @@ The following options are available when starting the server:
 * __-bind__ _[address]_ - By default the server binds to 0.0.0.0. This option will override that behavior
 * __-transports__ _[protocol list]_ - A comma-delimited list (no spaces) of transports that the server should support. By default, the server supports all of them. This option can be used to reduce that list
 
-For example, to start a server that listens on 1.2.3.4 and only accepts connections over DNS or ICMP, you could use
+For example, to start a server that listens on `1.2.3.4` and only accepts connections over DNS or ICMP, you could use
 
 ```bash
 iop-server -address "1.2.3.4" -transports "dns,icmp"
